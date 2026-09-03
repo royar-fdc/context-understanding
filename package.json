@@ -1,0 +1,36 @@
+{
+  "name": "context-understanding-benchmark",
+  "version": "0.1.0",
+  "description": "A custom mini benchmark runner that measures long-context understanding (not just retrieval) of LLMs: superseded decisions, semantic distractors, lost-in-the-middle, and multi-hop integration.",
+  "type": "module",
+  "bin": {
+    "lcbench": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "bench": "tsx src/cli.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "tsx src/cli.ts demo --out .demo"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "llm",
+    "benchmark",
+    "long-context",
+    "context-understanding",
+    "gemini",
+    "openai",
+    "anthropic"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

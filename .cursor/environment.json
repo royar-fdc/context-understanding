@@ -1,0 +1,4 @@
+{
+  "name": "context-understanding-benchmark",
+  "install": "npm ci"
+}
